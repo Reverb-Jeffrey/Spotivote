@@ -3,7 +3,7 @@ console.log('SpotifyVoteApp is ready!');
 document.getElementById('start-session-form').addEventListener('submit', async (e) => {
     e.preventDefault();
     const playlistName = document.getElementById('playlist-name').value;
-    const response = await fetch('/start-session', {
+    const response = await fetch('/api/start-session', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ playlistName })
