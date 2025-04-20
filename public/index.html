@@ -9,6 +9,23 @@
 <body>
     <h1>Welcome to SpotifyVoteApp</h1>
     <p>A simple way to vote for music in your WhatsApp group.</p>
+
+    <h2>Start a New Session</h2>
+    <form id="start-session-form">
+        <input type="text" id="playlist-name" placeholder="Playlist Name" required>
+        <button type="submit">Start Session</button>
+    </form>
+
+    <h2>Submit a Track</h2>
+    <form id="submit-track-form">
+        <input type="text" id="session-id" placeholder="Session ID" required>
+        <input type="text" id="track-link" placeholder="Spotify Track Link" required>
+        <button type="submit">Submit Track</button>
+    </form>
+
+    <h2>Results</h2>
+    <div id="results"></div>
+
     <script src="app.js"></script>
 </body>
 </html>
