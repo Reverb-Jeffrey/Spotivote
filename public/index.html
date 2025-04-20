@@ -23,6 +23,17 @@
         <button type="submit">Submit Track</button>
     </form>
 
+    <h2>Vote on a Track</h2>
+    <form id="vote-form">
+        <input type="text" id="vote-session-id" placeholder="Session ID" required>
+        <input type="text" id="vote-track-link" placeholder="Spotify Track Link" required>
+        <select id="vote-option">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+        <button type="submit">Vote</button>
+    </form>
+
     <h2>Results</h2>
     <div id="results"></div>
 
